@@ -1,0 +1,34 @@
+<!DOCTYPE html  >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ejercicio 9 JS</title>
+
+</head>
+
+<body onmousemove="mover(event)">
+	<img id="foto" src="img1.jpg" style="position:absolute; height: 180px; width: 180px" onclick="hacesClick(event)">
+	<script >
+
+var estaPinchada=false;
+var offsetX,offsetY,x,y,imagen;
+function hacesClick(event) {
+	estaPinchada=!estaPinchada;
+	 offsetX = x - event.target.hspace;
+	 offsetY = y - event.target.vspace;
+	 imagen = event.target;
+}
+
+function mover(event){
+	x = event.clientX;
+	y = event.clientY;
+	if(estaPinchada){
+		imagen.vspace = y - offsetY;
+		imagen.hspace = x - offsetX;
+	}
+
+}
+
+</script>
+</body>
+</html>

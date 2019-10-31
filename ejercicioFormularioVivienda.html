@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Insercion de vivienda</title>
+    </head>
+    <body>
+       
+        <form method="POST" action="formularioVivienda.php">
+        	<h1 style="color:blue;">Insercion de vivienda</h1>
+        	<br>
+            <h5>Introduzca los datos de la vivienda</h5>
+         <div style=" border-style:dashed">
+            Tipo de vivienda:
+            <select name="select"><option value="vivienda">Piso</option> <option value="vivienda"selected>Casa</option><option value="vivienda">Atico</option>
+</select>
+		<br>
+		<br>
+			Zona:
+            <select name="select"><option value="zona">Centro</option> <option value="zona"selected>Alrrededores</option><option value="zona">Atico</option>
+</select>
+        <br>
+        
+        	 <p>Direccion: <input type="text" name="direccion" size="30"></p> 
+        
+        	<p style="color: red;">¡Se requiere la direccion de la vivienda!</p>	
+       
+        	<p>Numero de dormitorios:<input type="radio" name="gender" value="numero"> 1  <input type="radio" name="gender" value="numero"> 2   <input type="radio" name="gender" value="numero"> 3 <input type="radio" name="gender" value="numero"> 4 <input type="radio" name="gender" value="numero"> 5
+        	<p>Precio: <input type="text" name="precio" size="30"> €</p>  
+        	<p style="color: red;">¡El precio debe ser numererico!</p> 
+        	<p>Tamaño: <input type="text" name="tamaño" size="30"> metros cuadrados</p>  
+        	<p>Extras(marquen los que procedan):<input type="radio" name="gender" value="extras"> Piscina  <input type="radio" name="gender" value="extras"> Jardin   <input type="radio" name="gender" value="extras"> Garage
+        	<p>Foto: <input type="text" name="direccion" size="30"></p> 
+        </div>
+
+    </body>
+</html>
